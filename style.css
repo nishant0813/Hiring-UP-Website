@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+.container{
+    padding: 10px 2%;
+    /* background-color: rgb(193, 190, 252); */
+}
+.showcase nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 10px;
+    background-color: white;
+    padding: 10px 10px;
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 2px 10px rebeccapurple;
+}
+#logo{
+    font-size: 35px;
+    color: rgb(97, 97, 209);
+    cursor: pointer;
+}
+#logo span{
+    color: rgb(170, 16, 63);
+}
+ nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: #474747;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #9354f8;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+.loginBtn{
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    color: blueviolet;
+    background: rgb(226, 207, 231);
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.loginBtn:hover{
+   color: #ffffff;
+   background-color: blueviolet;
+}
+.showcase-text{
+    padding-top: 70px;
+}
+.jobslist{
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 0px;
+    height: 30px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 500;
+    color: blueviolet;
+    background: rgb(226, 207, 231);
+    border-radius: 30px;
+}
+#aboutpera{
+    padding: 30px 0px;
+    line-height: 25px;
+}
+.showcase-text h1{
+    padding-top: 30px;
+    font-size: 40px;
+    color: #2e2c2c;
+}
+.showcase-img{
+    background-image: url("showcase-img1.png");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+/* ------------ job list------------ */
+ 
+#jobs-Box{
+    padding-top: 30px;
+}
+#jobs-Box p{
+    line-height: 25px;
+}
+.sub-title{
+    padding-bottom: 25px;
+}
+#jobPost{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 8px 14px;
+    color:white;
+    background:#7860e0;
+    border: none;
+}
+.work-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work {
+    width: 100%;
+    border: 1px solid rgb(216, 205, 205);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 30px;
+    background:rgb(236, 235, 238);
+    transition: 0.7s;
+}
+.work:hover{
+        transform: translateY(-10px);
+}
+.Company{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 70px;
+    width:80%
+}
+.Company div{
+    border: 1px solid gray;
+    width: 60px;
+    height: 50px;
+    font-size: 30px;
+    padding: 10px;
+}
+.work h2{
+    padding: 20px 0px;
+}
+.applyBtn{
+    border: none;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 8px 14px;
+    color:rgb(36, 201, 36);
+    background: rgb(216, 245, 216);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.applyBtn:hover{
+    background:rgb(36, 201, 36);
+    color: rgb(220, 245, 220);
+}
+.DeleteBtn{
+    border: none;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 8px 14px;
+    color: rgb(240, 89, 34);
+    background: rgb(255, 216, 216);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.DeleteBtn:hover{
+    background:rgb(240, 89, 34) ;
+    color: rgb(255, 216, 216);
+}
+/* ----------------login page----------- */
+
+.login-registration{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.register-title-box{
+    height: 500px;
+    background-color: #5c40da;
+    color: white;
+}
+.register-title-box p{
+    padding-left:40px ;
+    margin-bottom:50px;
+    line-height: 30px;
+}
+.register-title-box p i{
+    font-size: 40px;
+}
+.register-title-box h1{
+    font-size: 40px;
+    padding: 90px 40px ;
+}
+.loginBox{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.loginBox h2{
+    padding-top: 40px;
+    font-size: 30px;
+}
+.loginBox h5{
+    font-size: 12px;
+    padding-top: 15px;
+    font-weight: 300;
+}
+.loginBox p{
+    text-align: center;
+    font-size: 14px;
+}
+#googleId{
+    border:1px solid gray;
+    margin: 17px 0px;
+    height: 40px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    background: white;
+    color: #353535;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#googleId:hover{
+    color: rgb(73, 39, 228);
+    border: 2px solid rgb(24, 39, 255);
+    font-size: 18px;
+}
+#googleId i{
+    font-size: 18px;
+    margin-right: 10px;
+    color: rgb(24, 39, 255);
+}
+.inputBox label{
+    padding-top: 10px;
+    font-size: 14px;
+}
+.inputBox input{
+    width: 100%;
+    height: 40px;
+    margin: 8px 0px 20px 0px;
+}
+.remember-forgot{
+    display: flex;
+    align-items:center;
+    justify-content:flex-end;
+    height: 10px;
+}
+.loginbtn2{
+    width:100%;
+    height: 40px;
+    margin: 10px 0px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background: rgb(59, 59, 245);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.loginbtn2:hover{
+    background: white;
+    color : rgb(59, 59, 245);
+    border: 2px solid  rgb(59, 59, 245);
+}
+.remember-forgot a{
+    font-size: 12px;
+    color: rgb(116, 77, 207);
+}
+.register-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.register-link p{
+    font-size: 12px;
+}
+.register-link a{
+    font-size: 12px;
+    color: rgb(116, 77, 207) ;
+}
+/* ------------ submit-box-page-------------- */
+
+.submit-details{
+    /* border: 1px solid gray; */
+    height: 550px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 10px 0px 25px 0px;
+}
+.submit-details h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #2e2c2c;
+}
+.submit-details p{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #353535;
+    margin-bottom: 15px;
+}
+.job-details{
+    border: 1px solid gray;
+    background-color: rgba(213, 215, 236, 0.966);
+    height: 400px;
+    width: 100%;
+    display:grid;
+    padding: 10% 10%;
+    box-shadow: 2px 2px 20px rgb(172, 128, 241);
+}
+.job-details h3{
+    padding-bottom: 10px;
+}
+.job-details label{
+    font-size: 14px;
+    color: #353535;
+}
+.job-details input{
+    width: 100%;
+    height: 40px;
+    padding-left:2%;
+    margin: 5px 0px 15px 0px;
+}
+#submitBtn{
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #5c40da;
+    color: white;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+#submitBtn:hover{
+    color: #5c40da;
+    background: white;
+    border: 2px solid #5c40da;
+}
+/* ---------copyright-------- */
+
+.copyright{
+    /* border: 1px solid gray; */
+    margin: 20px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #5a5a5a;
+    box-shadow: 2px 7px 20px rgb(172, 128, 241);
+}
+.copyright i{
+    color: rgb(231, 38, 38);
+}
+
+nav .fa-solid{
+    display: none;
+}
+/* ---------small screen---------- */
+@media only screen and (max-width:780px){
+    nav ul li{
+        display:none;
+    }
+}
+@media only screen and (max-width:600px) {
+    #logo{
+        font-size: 25px;
+    }
+    .login-registration{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .register-title-box h1{
+     font-size: 30px;
+    }
+    .submit-details{
+        padding: 10px 3%;
+    }
+    .job-details{
+        width: 100%;
+        font-weight: 100%;
+    }
+    .loginBtn{
+        display:none;
+    }
+    /* ------------for nav bar----------- */
+
+    .showcase nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: #5c40da;
+    }
+    #side-menu{
+        background:rgb(211, 178, 228);
+        position: fixed;
+        top: 0;
+        right:-200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+   .showcase nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    .showcase nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
